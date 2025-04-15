@@ -1,0 +1,136 @@
+.profile-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.card {
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  width: clamp(350px, 50%, 1000px);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.gradient-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, #fdf2f8, #ffffff, #f5f3ff);
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.card-header {
+  position: relative;
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+  z-index: 1;
+}
+
+.icon-circle {
+  margin: 0 auto 0.5rem;
+  width: 48px;
+  height: 48px;
+  background-color: #fce7f3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heart-icon {
+  color: #f472b6;
+  fill: #fbcfe8;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #ec4899;
+  margin: 0.5rem 0;
+}
+
+.card-description {
+  color: #6b7280;
+  max-width: 22rem;
+  margin: 0 auto;
+  font-size: 0.875rem;
+}
+
+.card-content {
+  text-align: center;
+  padding: 1.5rem 1rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.placeholder-box {
+  height: 10rem;
+  border-radius: 0.75rem;
+  background: linear-gradient(to right, #eff6ff, #f5f3ff, #fdf2f8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder-text p {
+  font-size: 0.9rem;
+  color: #a78bfa;
+  margin-bottom: 0.5rem;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+}
+
+.dot.pink {
+  background-color: #fbcfe8;
+}
+.dot.lavender {
+  background-color: #ddd6fe;
+}
+.dot.blue {
+  background-color: #bfdbfe;
+}
+
+.connect-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 9999px;
+  background: linear-gradient(to right, #f472b6, #c4b5fd);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: inline-flex;
+  align-items: center;
+}
+
+.connect-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #ec4899, #a78bfa);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.note-text {
+  font-size: 0.75rem;
+  color: #6b7280;
+  max-width: 20rem;
+  margin: 1rem auto 0;
+}

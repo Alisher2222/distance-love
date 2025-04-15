@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 export const authentication = (req, res, next) => {
+  console.log("body:", req.body, "header:", req.headers.authorization);
   const header = req.headers.authorization;
   if (!header)
     return res.status(400).json({ error: "no access token is included!" });

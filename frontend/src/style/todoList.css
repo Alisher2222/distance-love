@@ -1,0 +1,177 @@
+.tasklist-container {
+  max-width: 600px;
+  margin: 2rem auto; /* центрирует блок по горизонтали */
+  background: white;
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.title {
+  font-size: 2rem;
+  color: #e7479f;
+  text-align: center;
+}
+
+.subtitle {
+  color: #6b7280;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.task-input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ffd1e8;
+  border-radius: 999px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tag-selector {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.tag.selected {
+  background: #e7479f;
+  color: white;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.add-button {
+  background: #e7479f;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tabs {
+  display: flex;
+  margin-top: 1rem;
+  border-radius: 999px;
+  background: #ffd1e8;
+  overflow: hidden;
+}
+
+.tab {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  background: transparent;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: white;
+  color: #e7479f;
+}
+
+.task-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 16px;
+  margin-top: 1rem;
+}
+
+.task-card.pink {
+  background: #ffd1e8;
+}
+
+.task-card.purple {
+  background: #e8d1ff;
+}
+
+.task-card.completed .task-text {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.task-info {
+  flex: 1;
+}
+
+.task-text {
+  font-size: 1rem;
+}
+
+.task-meta {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.badge {
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  font-weight: 500;
+}
+
+.badge.romantic {
+  background: #ffd1e8;
+  color: #e7479f;
+}
+.badge.funny {
+  background: #fef3c7;
+  color: #b45309;
+}
+.badge.important {
+  background: #e8d1ff;
+  color: #a237de;
+}
+.badge.surprise {
+  background: #ede9fe;
+  color: #6b21a8;
+}
+
+.due-date {
+  display: flex;
+  align-items: center;
+  color: #6b7280;
+}
+
+.empty-state {
+  text-align: center;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+.empty-state.pink {
+  background: #ffd1e8;
+}
+
+.empty-state.purple {
+  background: #e8d1ff;
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.25rem;
+}

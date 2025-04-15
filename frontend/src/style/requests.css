@@ -1,0 +1,77 @@
+.request-box {
+  padding: 0.6rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  margin-bottom: 0.8rem;
+  font-size: 0.85rem;
+  max-width: 300px;
+}
+
+.status-pending {
+  background-color: #fefce8;
+  border: 1px solid #facc15;
+  color: #854d0e;
+}
+
+.status-active {
+  background-color: #f0fdf4;
+  border: 1px solid #4ade80;
+  color: #166534;
+}
+
+.status-reject {
+  background-color: #fef2f2;
+  border: 1px solid #f87171;
+  color: #7f1d1d;
+}
+
+.status-default {
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  color: #374151;
+}
+
+.requests-wrapper {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: #f9fafb; /* light gray background */
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  max-width: 320px;
+}
+
+.action-buttons {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.accept-button,
+.reject-button {
+  padding: 0.25rem 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.accept-button {
+  background-color: #4ade80;
+  color: white;
+}
+
+.accept-button:hover {
+  background-color: #22c55e;
+}
+
+.reject-button {
+  background-color: #f87171;
+  color: white;
+}
+
+.reject-button:hover {
+  background-color: #ef4444;
+}

@@ -1,0 +1,108 @@
+.container__profile {
+  min-height: 110vh;
+  width: 100vw;
+  background-color: #faf3fb;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.container__user {
+  width: clamp(350px, 50%, 1000px);
+  height: 350px;
+  background-color: #fefeff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.container__couple {
+  width: clamp(350px, 50%, 1000px);
+  height: 450px;
+  background-color: #fefeff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container__user__top {
+  height: 25%;
+  background: linear-gradient(to right, #e7479f, #a237de);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.profile__heading {
+  color: white;
+  font-weight: bold;
+  font-size: clamp(18px, 3vw, 26px);
+}
+
+.user__description {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.user__fullname {
+  color: purple;
+  font-weight: bold;
+  font-size: clamp(17px, 2vw, 20px);
+}
+.user__data {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: clamp(13px, 2vw, 15px);
+}
+
+.container__user__bottom {
+  display: flex;
+  gap: 5%;
+}
+.photo__container {
+  width: 23%;
+  height: 100%;
+  padding-left: 3%;
+  padding-top: 15px;
+}
+.photo {
+  border: 1px solid #7632af;
+  width: clamp(70px, 10vw, 150px);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: #eaeaea;
+}
+.user__interest__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.interests__heading {
+  font-size: clamp(13px, 2vw, 18px);
+  color: purple;
+  font-weight: bold;
+}
+.interests {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: clamp(12px, 1.5vw, 16px);
+}
+
+.interest__profile {
+  border: none;
+  background-color: #eee8ff;
+  color: #7632af;
+  border-radius: 20px;
+}
+
+.user__couple {
+  width: 90%;
+  height: 80px;
+  padding-left: 20px;
+  background-color: #f5f3ff;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

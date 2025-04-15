@@ -1,0 +1,78 @@
+.calendar__container {
+  width: 100vw;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #faf3fb;
+}
+.calendar {
+  width: 40vw;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  position: relative;
+}
+
+.calendar__frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.day__line {
+  display: flex;
+  gap: 10px;
+}
+.day__container {
+  width: 60px;
+  aspect-ratio: 2/1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f2f4;
+  justify-content: center;
+  align-items: center;
+}
+.day__of__week {
+  font-weight: bold;
+}
+
+.free__day {
+  width: 60px;
+  aspect-ratio: 2/1;
+  background-color: #dbeaff;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.busy__day {
+  width: 60px;
+  aspect-ratio: 2/1;
+  background-color: #ffd6d6;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.meeting__button {
+  margin-top: 15px;
+  padding: 10px 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  background: linear-gradient(to right, #e7479f, #a237de);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.calendar__heading {
+  font-size: 24px;
+  font-weight: bold;
+}

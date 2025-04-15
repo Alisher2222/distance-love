@@ -1,0 +1,31 @@
+.info__container {
+  width: clamp(350px, 22vw, 700px);
+
+  background-color: #cde9f7;
+  padding: 10px 10px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 1000;
+  border: 1px solid #9ecee8;
+}
+
+.info__text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.info__heading {
+  color: #467fb0;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.info__description {
+  color: #7fabce;
+  font-size: 16px;
+}

@@ -1,0 +1,31 @@
+.errorBar__container {
+  width: clamp(350px, 22vw, 700px);
+  height: 60px;
+  background-color: #eec8c5;
+  padding: 10px 10px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 1000;
+  border: 1px solid #cf9999;
+}
+
+.error__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.error__heading {
+  color: #b3322b;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.error__description {
+  color: #c46260;
+  font-size: 16px;
+}
